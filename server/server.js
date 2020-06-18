@@ -11,5 +11,6 @@ app.get('/*', (req, res) => {
 });
 
 app.listen(port, () => {
+  console.log(publicPath);
   console.log('Server listening for requests.');
 });
