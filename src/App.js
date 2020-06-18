@@ -135,15 +135,15 @@ function App() {
         pickColor();
       }
     }
-  }, [colors, mode, pickColor]);
+  }, [colors]);
 
   useEffect(() => {
     newGame();
-  }, [newGame]);
+  }, []);
 
   useEffect(() => {
     newGame();
-  }, [mode, newGame]);
+  }, [mode]);
 
   return (
     <div className="App">
